@@ -4,7 +4,7 @@
   <title><![CDATA[数据矿工]]></title>
   <link href="http://haoyuan-hu.github.io/atom.xml" rel="self"/>
   <link href="http://haoyuan-hu.github.io/"/>
-  <updated>2013-12-17T17:14:46+08:00</updated>
+  <updated>2013-12-17T17:18:11+08:00</updated>
   <id>http://haoyuan-hu.github.io/</id>
   <author>
     <name><![CDATA[胡浩源]]></name>
@@ -23,18 +23,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Octopress Di [?] Pian]]></title>
+    <title type="html"><![CDATA[Octopress]]></title>
     <link href="http://haoyuan-hu.github.io/blog/2013/12/17/octopress-di-%5B%3F%5D-pian/"/>
-    <updated>2013-12-17T00:00:00+08:00</updated>
+    <updated>2013-12-17T17:07:47+08:00</updated>
     <id>http://haoyuan-hu.github.io/blog/2013/12/17/octopress-di-[?]-pian</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post
-title: &ldquo;octopress 第一篇&rdquo;
-date: 2013-12-17 17:07:47 +0800
-comments: true
-categories:
--当我们评价一件事情值不值得去做， 应该花多少精力去做的时候， 应该考虑这几个因素：</p>
+    <content type="html"><![CDATA[<p>当我们评价一件事情值不值得去做， 应该花多少精力去做的时候， 应该考虑这几个因素：</p>
 
 <ul>
 <li>收益</li>
