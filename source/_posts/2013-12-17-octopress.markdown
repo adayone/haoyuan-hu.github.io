@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "octopress "
+title: "该做什么是好"
 date: 2013-12-17 17:07:47 +0800
 comments: true
-categories: 
-tag:自我管理
+categories: 效率 
+tags: 效率
 ---
 
 当我们评价一件事情值不值得去做， 应该花多少精力去做的时候， 应该考虑这几个因素：
