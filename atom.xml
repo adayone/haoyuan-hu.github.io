@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://haoyuan-hu.github.io/atom.xml" rel="self"/>
+  <link href="http://haoyuan-hu.github.io/"/>
+  <updated>2013-12-17T16:48:05+08:00</updated>
+  <id>http://haoyuan-hu.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
