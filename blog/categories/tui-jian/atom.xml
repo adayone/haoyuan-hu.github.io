@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 推荐 | 数据矿工]]></title>
   <link href="http://haoyuan-hu.github.io/blog/categories/tui-jian/atom.xml" rel="self"/>
   <link href="http://haoyuan-hu.github.io/"/>
-  <updated>2013-12-18T15:25:23+08:00</updated>
+  <updated>2013-12-18T15:50:41+08:00</updated>
   <id>http://haoyuan-hu.github.io/</id>
   <author>
     <name><![CDATA[胡浩源]]></name>
@@ -27,7 +27,7 @@
 </ul>
 
 
-<p>而对于实时数据的引入， 一部分采用的是：</p>
+<p>而对于实时数据的引入， 一部分的做法是把实时的在线数据采集下来， 在离线做训练， 获得权重以后， 做一个在线预测的过程：</p>
 
 <ol>
 <li>收集实时数据， 做离线训练</li>
