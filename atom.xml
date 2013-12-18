@@ -4,7 +4,7 @@
   <title><![CDATA[数据矿工]]></title>
   <link href="http://haoyuan-hu.github.io/atom.xml" rel="self"/>
   <link href="http://haoyuan-hu.github.io/"/>
-  <updated>2013-12-18T09:46:37+08:00</updated>
+  <updated>2013-12-18T09:52:30+08:00</updated>
   <id>http://haoyuan-hu.github.io/</id>
   <author>
     <name><![CDATA[胡浩源]]></name>
@@ -12,24 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Tag]]></title>
-    <link href="http://haoyuan-hu.github.io/blog/2013/12/17/tag/"/>
-    <updated>2013-12-17T19:17:12+08:00</updated>
-    <id>http://haoyuan-hu.github.io/blog/2013/12/17/tag</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://haoyuan-hu.github.io/blog/2013/12/17/test/"/>
-    <updated>2013-12-17T19:15:47+08:00</updated>
-    <id>http://haoyuan-hu.github.io/blog/2013/12/17/test</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[该做什么是好]]></title>
