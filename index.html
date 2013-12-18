@@ -9,7 +9,10 @@
   <meta name="author" content="胡浩源">
 
   
-  <meta name="description" content="传统的推荐: 离线训练 离线预测 利用kv存储和获取结果 而对于实时数据的引入， 一部分的做法是把实时的在线数据采集下来， 在离线做训练， 获得权重以后， 做一个在线预测的过程： 收集实时数据， 做离线训练 做在线预测 另一部分采用的是online learning, 利用用户不停的行为反馈（ &hellip;">
+  <meta name="description" content="传统的推荐: 离线训练
+离线预测
+利用kv存储和获取结果 而对于实时数据的引入， 一部分的做法是把实时的在线数据采集下来， 在离线做训练， 获得权重以后， 做一个在线预测的过程： 收集实时数据， 做离线训练
+做在线预测 另一部分采用的是online learning, 利用用户不停的行为反馈（ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -26,7 +29,22 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$']],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        },
+        messageStyle: "none",
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
 
   
 
@@ -95,17 +113,19 @@
   <div class="entry-content"><p>传统的推荐:</p>
 
 <ul>
-  <li>离线训练</li>
-  <li>离线预测</li>
-  <li>利用kv存储和获取结果</li>
+<li>离线训练</li>
+<li>离线预测</li>
+<li>利用kv存储和获取结果</li>
 </ul>
+
 
 <p>而对于实时数据的引入， 一部分的做法是把实时的在线数据采集下来， 在离线做训练， 获得权重以后， 做一个在线预测的过程：</p>
 
 <ol>
-  <li>收集实时数据， 做离线训练</li>
-  <li>做在线预测</li>
+<li>收集实时数据， 做离线训练</li>
+<li>做在线预测</li>
 </ol>
+
 
 <p>另一部分采用的是online learning, 利用用户不停的行为反馈（包含显式的和隐式的）， 来调整特征权重。</p>
 
@@ -114,19 +134,21 @@
 随后我们采集相应的反馈信息：</p>
 
 <ul>
-  <li>点击：显式正反馈</li>
-  <li>删除： 显式负反馈</li>
-  <li>未点击： 隐式负反馈</li>
+<li>点击：显式正反馈</li>
+<li>删除： 显式负反馈</li>
+<li>未点击： 隐式负反馈</li>
 </ul>
+
 
 <p>在这一过程中快速积累用户对不同策略的敏感程度，同时对离线的预测结果进行纠正。</p>
 
 <p>由于单独位置对用户的曝光机会有限， 需要以打通的眼光看待所有的投放位置， 将他作为一个整体：</p>
 
 <ol>
-  <li>收集到显式负反馈的策略在全局降分</li>
-  <li>收集到显式负反馈的目标在全局过滤</li>
+<li>收集到显式负反馈的策略在全局降分</li>
+<li>收集到显式负反馈的目标在全局过滤</li>
 </ol>
+
 
 <p>最轻量级的快速尝试方式是， 对于某部分用户而言， 预估的投放策略可信度已经低于热门了， 或者补全的时候采用相似算法的可信度已经低于热门了， 就可以通过快速切换策略达到在线选择的目的。</p>
 </div>
@@ -167,44 +189,49 @@
   <div class="entry-content"><p>当我们评价一件事情值不值得去做， 应该花多少精力去做的时候， 应该考虑这几个因素：</p>
 
 <ul>
-  <li>收益</li>
-  <li>是否随时间衰减</li>
-  <li>损失</li>
-  <li>是否随时间递增</li>
+<li>收益</li>
+<li>是否随时间衰减</li>
+<li>损失</li>
+<li>是否随时间递增</li>
 </ul>
+
 
 <p>收益和收益衰减周期比较容易理解, 比如做这件事情能带来你健康， 金钱，升迁上得收益，以及持续的时间。</p>
 
 <p>比如：</p>
 
 <ul>
-  <li>高收益，不衰减：环游世界，和大师来场心灵的碰撞。</li>
-  <li>高收益，衰减：疯狂购物， 撸管。</li>
-  <li>低收益，不衰减：读书， 运动，瑜伽。</li>
-  <li>低收益，衰减：刷微博， 刷微信（这个最无聊了）。</li>
+<li>高收益，不衰减：环游世界，和大师来场心灵的碰撞。</li>
+<li>高收益，衰减：疯狂购物， 撸管。</li>
+<li>低收益，不衰减：读书， 运动，瑜伽。</li>
+<li>低收益，衰减：刷微博， 刷微信（这个最无聊了）。</li>
 </ul>
 
+
 <p>很少会有人在理性的情况下去做一件有损失的事情。
-这里的损害指的是：
-&gt; 如果你不去做这件事情， 会带来额外的损失是什么。比如拒绝一次无聊的聚餐可能会得罪那些邀请你的人。</p>
+这里的损害指的是：</p>
+
+<blockquote><p>如果你不去做这件事情， 会带来额外的损失是什么。比如拒绝一次无聊的聚餐可能会得罪那些邀请你的人。</p></blockquote>
 
 <p>比如：</p>
 
 <ul>
-  <li>高损失，递增：不及时治疗自己的疾病。</li>
-  <li>高损失，不递增：拖延错过还房贷的时间。</li>
-  <li>低损失，递增：不及时整理自己的家（哦， 单身屌丝们。。。），还记得破窗理论么。</li>
-  <li>低损失，不递增：拖延错过还信用卡的时间。</li>
+<li>高损失，递增：不及时治疗自己的疾病。</li>
+<li>高损失，不递增：拖延错过还房贷的时间。</li>
+<li>低损失，递增：不及时整理自己的家（哦， 单身屌丝们。。。），还记得破窗理论么。</li>
+<li>低损失，不递增：拖延错过还信用卡的时间。</li>
 </ul>
+
 
 <p>整体而言， 对于人要面对的复杂的事务， 当你没有足够的时间判断的时候， 只要记住问自己这几个问题：</p>
 
 <ul>
-  <li>做这件事情我的收益是什么，会随着时间累积吗？ 如果是， 做吧。</li>
-  <li>不做这件事情我的损失是什么，会随着时间恶化吗? 如果是， 做吧。</li>
+<li>做这件事情我的收益是什么，会随着时间累积吗？ 如果是， 做吧。</li>
+<li>不做这件事情我的损失是什么，会随着时间恶化吗? 如果是， 做吧。</li>
 </ul>
 
-<p>–</p>
+
+<p>&mdash;</p>
 </div>
   
   
