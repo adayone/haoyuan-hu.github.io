@@ -3,7 +3,7 @@ layout: post
 title: "帮张侃找女朋友"
 date: 2013-12-19 19:04:48 +0800
 comments: true
-categories: 
+tags: funny 
 ---
 
 我们先选择Drake公式计算两人再次相遇的概率。

@@ -4,7 +4,7 @@ title: "实时策略"
 date: 2013-12-18 14:53:55 +0800
 comments: true
 categories: 推荐
-abstract:实时数据的引入， 
+abstract: 实时数据的引入，对已有的架构和算法提出了新的跳帧， 对于online learning带来的红利， 我们似乎还没有准备好。 
 ---
 
 
