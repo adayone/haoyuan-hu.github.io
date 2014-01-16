@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://haoyuan-hu.github.io/sitemap.xml 

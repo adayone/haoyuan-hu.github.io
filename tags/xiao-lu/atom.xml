@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: 效率 | 数据矿工]]></title>
+  <link href="http://haoyuan-hu.github.io/tags/xiao-lu/atom.xml" rel="self"/>
+  <link href="http://haoyuan-hu.github.io/"/>
+  <updated>2013-12-23T14:40:01+08:00</updated>
+  <id>http://haoyuan-hu.github.io/</id>
+  <author>
+    <name><![CDATA[胡浩源]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[该做什么是好]]></title>
+    <link href="http://haoyuan-hu.github.io/blog/2013/12/17/octopress/"/>
+    <updated>2013-12-17T17:07:47+08:00</updated>
+    <id>http://haoyuan-hu.github.io/blog/2013/12/17/octopress</id>
+    <content type="html"><![CDATA[<p>当我们评价一件事情值不值得去做， 应该花多少精力去做的时候， 应该考虑这几个因素：</p>
+
+<ul>
+  <li>收益</li>
+  <li>是否随时间衰减</li>
+  <li>损失</li>
+  <li>是否随时间递增</li>
+</ul>
+
+<p>收益和收益衰减周期比较容易理解, 比如做这件事情能带来你健康， 金钱，升迁上得收益，以及持续的时间。</p>
+
+<p>比如：</p>
+
+<ul>
+  <li>高收益，不衰减：环游世界，和大师来场心灵的碰撞。</li>
+  <li>高收益，衰减：疯狂购物， 撸管。</li>
+  <li>低收益，不衰减：读书， 运动，瑜伽。</li>
+  <li>低收益，衰减：刷微博， 刷微信（这个最无聊了）。</li>
+</ul>
+
+<p>很少会有人在理性的情况下去做一件有损失的事情。
+这里的损害指的是：
+&gt; 如果你不去做这件事情， 会带来额外的损失是什么。比如拒绝一次无聊的聚餐可能会得罪那些邀请你的人。</p>
+
+<p>比如：</p>
+
+<ul>
+  <li>高损失，递增：不及时治疗自己的疾病。</li>
+  <li>高损失，不递增：拖延错过还房贷的时间。</li>
+  <li>低损失，递增：不及时整理自己的家（哦， 单身屌丝们。。。），还记得破窗理论么。</li>
+  <li>低损失，不递增：拖延错过还信用卡的时间。</li>
+</ul>
+
+<p>整体而言， 对于人要面对的复杂的事务， 当你没有足够的时间判断的时候， 只要记住问自己这几个问题：</p>
+
+<ul>
+  <li>做这件事情我的收益是什么，会随着时间累积吗？ 如果是， 做吧。</li>
+  <li>不做这件事情我的损失是什么，会随着时间恶化吗? 如果是， 做吧。</li>
+</ul>
+
+<p>$a^2+b^2=\frac{1}{2}$</p>
+]]></content>
+  </entry>
+  
+</feed>
